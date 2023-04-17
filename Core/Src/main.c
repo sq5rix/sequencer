@@ -26,6 +26,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "GFX.h"
+#include "menu.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -97,6 +98,12 @@ int main(void)
   // GFX_draw_fill_rect(0, 0, 64, 32, WHITE);
   GFX_draw_char(10, 10, 'A', WHITE, BLACK, 2, 2);
   SSD1306_display_repaint();
+ HAL_Delay(2000);
+
+  menu_t menu;
+  menu_init(&menu);
+  display_menu_items(&menu);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */

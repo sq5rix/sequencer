@@ -1,0 +1,7 @@
+menu.c:15:6:display_string	56	static
+menu.c:34:6:menu_init	48	static
+menu.c:58:6:menu_display	24	static
+menu.c:80:6:menu_select_prev_item	16	static
+menu.c:87:6:menu_select_next_item	16	static
+menu.c:94:6:menu_activate_selected_item	16	static
+menu.c:100:6:display_menu_items	24	static
